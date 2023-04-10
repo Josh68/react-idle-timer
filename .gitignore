@@ -14,7 +14,7 @@ npm-debug.log*
 
 # Application
 #
-dist
+# dist - track dist to allow installing from GH
 out
 worker
 coverage
