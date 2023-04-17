@@ -1,10 +1,23 @@
 # Changelog
 
-### 5.3.3
+### 5.6.1
+
+#### 🐞 Bug Fixes
+- Throw an error when `promptBeforeIdle` is greater than or equal to `timeout`. #342
+
+### 5.6.0
+
+#### ⚡️ Features
+- Expose `IIdleTimer` interface as the second parameter to callback methods. #339
+
+#### 🐞 Bug Fixes
+- Prevent race condition error from being thrown when the hook unmounts while using leader election. #337
+
+### 5.5.3
 
 #### 🐞 Bug Fixes
 - Fix a bug where `onPrompt` would be emitted instead of `onIdle` after `timeout` is exceeded when devices wake from sleep. #172
-- Fix a bug where `onMessage` was being called with old function reference. #328
+- Fix a bug where `onMessage` was being called with an old function reference. #328
 
 ### 5.5.2
 

@@ -2,6 +2,21 @@
 title: Changelog
 description: IdleTimer Changelog
 ---
+### 5.6.1
+
+#### 🐞 Bug Fixes
+- Throw an error when `promptBeforeIdle` is greater than or equal to `timeout`.
+
+
+### 5.6.0
+<Divider />
+
+#### ⚡️ Features
+- Expose `IIdleTimer` interface as the second parameter to callback methods.
+
+#### 🐞 Bug Fixes
+- Prevent race condition error from being thrown when the hook unmounts while using leader election.
+
 ### 5.5.3
 <Divider />
 
